@@ -2,81 +2,23 @@
   <header class="header">
     <ul class="menu" #menu>
       <li class="menu__item" role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact :true}">
-        <a class="menu__link" routerLink="/">ABOUT US</a>
+        <a class="menu__link" routerLink="/offshore">Offshore Software Services</a>
       </li>
       <li class="menu__item" role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact :true}">
-        <a class="menu__link" routerLink="/about">SERVICES</a>
+        <a class="menu__link" routerLink="/product">Product</a>
       </li>
       <li class="menu__item" role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact :true}">
-        <a class="menu__link" routerLink="/about">TECHNOLOGY</a>
+        <a class="menu__link" routerLink="/projects">Projects</a>
       </li>
-      <li class="menu__item" role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact :true}">
-        <a class="menu__link" routerLink="/about">INDUSTRIES</a>
-      </li>
-      <li class="menu__item" role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact :true}">
-        <a class="menu__link" routerLink="/about">RESOURCES</a>
-      </li>
-    </ul>
-    <ul class="menu menu-right" #menuSecond>
-      <li class="menu__item" role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact :true}">
-        <a class="menu__link" routerLink="/about">Blog</a>
-      </li>
-      <li class="menu__item" role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact :true}">
-        <a class="menu__link" routerLink="/about">Careers</a>
-      </li>
+  
     </ul>
   </header>
-  <section class="first-section">
-    <div class="info">
-      <h1 class="heading-1">
-        Digital Technology and Innovation Partners
-      </h1>
-      <p class="paragraph">
-        Enabling Global Business with Digital Innovation, 
-        Transformation, and Technology Adoption
-      </p>
-      <a class="btn btn--start">Get Started</a>
-    </div>
-    <div class="visuals">
-      <div class="image-container">
-        <img
-          #imageFirst
-          src="../assets/photo-1536179247184-595913ca4a28.jpeg"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <img
-          #imageSecond
-          src="../assets/photo-1469817805249-72b7df1c3c05.jpeg"
-          alt=""
-        />
-      </div>
-    </div>
-  </section>
-  <section class="second-section" #secondSection>
-    <div class="box"></div>
-    <h4 class="heading-4" id="about">About Us</h4>
-    <h1 class="heading-1" id="buy">Accelerate your business growth with our digital solutions and services.</h1>
-    <div class="info-1">
-      <div class="info-1__text">
-        <span class="quote">
-          "
-        </span>
-        <h2 class="heading-3">
-          We provide comprehensive services to build 
-          digital solutions & manage complete product lifecycle.
-        </h2>
-        <p class="paragraph">
-          Pre-built mobility solutions to save businesses' 
-          valuable time and money and customized to their needs.
-        </p>
-        <a class="btn--learn">Learn More</a>
-      </div>
-      <div class="info-1__visual">
-        <img src="../assets/photo-1593016605825-8cfb409ca3b1.jpeg" alt="">
-      </div>
-    </div>
 
-  </section>
+  
+  <router-outlet></router-outlet>
+    
+     
+  
+
 </div>
+

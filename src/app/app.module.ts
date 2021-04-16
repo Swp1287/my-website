@@ -6,10 +6,18 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from "@angular/router";
 import { appRoutingModule } from "./app-routing.module";
+import { OffshoreComponent } from './offshore/offshore.component';
+import { HomeComponent } from './home/home.component';
+import { ProductComponent } from './product/product.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OffshoreComponent,
+    HomeComponent,
+    ProductComponent,
+    ProjectsComponent
   ],
 
   imports: [BrowserModule, FormsModule, HttpClientModule, appRoutingModule],
